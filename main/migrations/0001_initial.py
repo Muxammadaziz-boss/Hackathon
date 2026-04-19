@@ -66,7 +66,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=255)),
                 ('subtitle', models.CharField(blank=True, max_length=255, null=True)),
                 ('description', models.TextField()),
-                ('icon', models.CharField(max_length=255)),
+                ('icon', models.CharField(max_length=255)), #M-aziz
             ],
         ),
         migrations.CreateModel(

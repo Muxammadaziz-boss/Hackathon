@@ -1,0 +1,1609 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon IT School | Premium Ta'lim Markazi - Farg'ona</title>
+    <meta
+      name="description"
+      content="Hackathon IT School - Farg'ona shahrida zamonaviy ta'lim markazi. IELTS, SAT va umumiy ingliz tili kurslari. 2 va 1-tarif asosida yotoqxona va qatnov xizmati."
+    />
+    <meta name="keywords" content="Hackathon IT School, IELTS tayyorlash, SAT tayyorlash, ingliz tili kurslari, Farg'ona ta'lim, yotoqxona, qatnov, maktab" />
+    <meta name="author" content="Hackathon IT School" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1F4D2A" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackathon.uz" />
+    <meta property="og:title" content="Hackathon IT School | Premium Ta'lim Markazi" />
+    <meta property="og:description" content="Farg'ona shahrida zamonaviy ta'lim markazi. IELTS, SAT va ingliz tili kurslari. 2 va 1-tarif asosida yotoqxona va qatnov xizmati." />
+    <meta property="og:image" content="https://hackathon.uz/images/og-image.jpg" />
+    <meta property="og:locale" content="uz_UZ" />
+    <meta property="og:site_name" content="Hackathon IT School" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hackathon IT School | Premium Ta'lim Markazi" />
+    <meta name="twitter:description" content="Farg'ona shahrida zamonaviy ta'lim markazi. IELTS, SAT va ingliz tili kurslari." />
+    <meta name="twitter:image" content="https://hackathon.uz/images/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1F4D2A",
+              secondary: "#57C96D",
+              slate: "#0F2916",
+              muted: "#64748B",
+              surface: "#F8FAFC",
+              success: "#10B981",
+              accent: "#F59E0B",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              card: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+              cardhover: "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+            },
+          },
+        },
+      };
+
+      (() => {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-white font-sans text-slate">
+    <div
+      id="preloader"
+      class="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden"
+    >
+      <div class="preloader-bg-shape preloader-bg-1"></div>
+      <div class="preloader-bg-shape preloader-bg-2"></div>
+      <div class="preloader-bg-shape preloader-bg-3"></div>
+
+      <div class="preloader-inner text-center relative z-10">
+        <div class="preloader-icon-wrap mb-10">
+          <div class="preloader-icon-ring-1"></div>
+          <div class="preloader-icon-ring-2"></div>
+          <div class="preloader-icon-ring-3"></div>
+          <div class="preloader-icon-core">
+            <img loading="lazy"
+              src="images/logo.png"
+              alt="Hackathon IT School"
+              class="h-20 w-20 rounded-2xl object-contain"
+            />
+          </div>
+        </div>
+
+        <div class="preloader-bar-wrap mb-4">
+          <div class="preloader-bar-track">
+            <div id="preloader-bar" class="preloader-bar-fill"></div>
+          </div>
+        </div>
+
+        <div id="preloader-percent" class="preloader-percent">0%</div>
+
+        <div class="preloader-status-text">Sahifa yuklanmoqda</div>
+
+        <div class="preloader-brand mt-10">
+          <div class="preloader-brand-text">Hackathon IT School</div>
+          <div class="preloader-brand-sub">Premium Ta'lim Markazi</div>
+        </div>
+      </div>
+    </div>
+
+    <header
+      id="navbar"
+      class="fixed left-0 right-0 top-0 z-50 border-b border-transparent bg-white/90 backdrop-blur transition-all duration-300"
+    >
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
+      >
+        <a href="#home" class="flex items-center gap-3">
+          <img loading="lazy"
+            src="images/logo.png"
+            alt="Hackathon IT School logo"
+            class="h-12 w-12 rounded-xl object-contain"
+          />
+          <div>
+            <div class="text-lg font-extrabold text-primary">
+              Hackathon IT School
+            </div>
+            <div class="text-xs text-muted">Premium ta'lim markazi</div>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-7 md:flex">
+          <a
+            href="#home"
+            class="nav-link text-sm font-medium text-slate transition hover:text-primary"
+            >Bosh sahifa</a
+          >
+          <a
+            href="#about"
+            class="nav-link text-sm font-medium text-slate transition hover:text-primary"
+            >Maktab haqida</a
+          >
+          <a
+            href="#courses"
+            class="nav-link text-sm font-medium text-slate transition hover:text-primary"
+            >Kurslar</a
+          >
+          <a
+            href="#gallery"
+            class="nav-link text-sm font-medium text-slate transition hover:text-primary"
+            >Galereya</a
+          >
+          <a
+            href="#contact"
+            class="nav-link text-sm font-medium text-slate transition hover:text-primary"
+            >Bog'lanish</a
+          >
+        </nav>
+
+        <div class="hidden md:flex md:items-center md:gap-4">
+          <button
+            id="dark-mode-toggle"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
+            aria-label="Tungi rejim"
+          >
+            <i class="fas fa-moon text-lg" id="dark-mode-icon"></i>
+          </button>
+          <a
+            href="#contact"
+            class="inline-flex items-center rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-secondary hover:shadow-cardhover"
+            >Ro'yxatdan o'tish</a
+          >
+        </div>
+
+        <button
+          id="mobile-menu-btn"
+          class="rounded-lg p-2 text-slate md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Mobil menyu"
+        >
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-slate-200 bg-white md:hidden"
+      >
+        <div class="space-y-1 px-4 py-4">
+          <a
+            href="#home"
+            class="block rounded-lg px-3 py-3 text-sm font-medium text-slate hover:bg-slate-50"
+            >Bosh sahifa</a
+          >
+          <a
+            href="#about"
+            class="block rounded-lg px-3 py-3 text-sm font-medium text-slate hover:bg-slate-50"
+            >Maktab haqida</a
+          >
+          <a
+            href="#courses"
+            class="block rounded-lg px-3 py-3 text-sm font-medium text-slate hover:bg-slate-50"
+            >Kurslar</a
+          >
+          <a
+            href="#gallery"
+            class="block rounded-lg px-3 py-3 text-sm font-medium text-slate hover:bg-slate-50"
+            >Galereya</a
+          >
+          <button
+            id="mobile-dark-mode-toggle"
+            type="button"
+            class="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 px-3 py-3 text-sm font-semibold text-slate hover:bg-slate-50"
+          >
+            <i class="fas fa-moon" id="mobile-dark-mode-icon"></i>
+            Tungi rejim
+          </button>
+          <a
+            href="#contact"
+            class="block rounded-lg bg-primary px-3 py-3 text-sm font-semibold text-white"
+            >Ro'yxatdan o'tish</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="home"
+        class="hero-gradient relative overflow-hidden pt-32 text-white"
+      >
+        <div
+          class="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr,0.9fr] lg:px-8 lg:py-24"
+        >
+          <div class="relative z-10">
+            <div
+              class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur"
+            >
+              <i class="fas fa-award text-accent"></i>
+              Natijaga yo'naltirilgan zamonaviy ta'lim
+            </div>
+            <h1
+              class="max-w-2xl text-4xl font-extrabold leading-tight md:text-5xl lg:text-6xl"
+            >
+              Farzandingiz kelajagi biz bilan
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-green-100">
+              Sifatli ta'lim va zamonaviy pedagogika - bizning kafolatimiz.
+              IELTS, SAT va umumiy ingliz tili kurslari orqali akademik va
+              shaxsiy o'sishni birlashtiramiz.
+            </p>
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-xl bg-white px-7 py-4 text-base font-semibold text-primary transition hover:bg-slate-100"
+                >Ro'yxatdan o'tish</a
+              >
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center rounded-xl border-2 border-white/80 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10"
+                >Batafsil ma'lumot</a
+              >
+            </div>
+            <div class="mt-10 grid max-w-xl gap-4 sm:grid-cols-3">
+              <div
+                class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"
+              >
+                <div class="text-2xl font-bold">500+</div>
+                <div class="mt-1 text-sm text-green-100">Bitiruvchilar</div>
+              </div>
+              <div
+                class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"
+              >
+                <div class="text-2xl font-bold">15+</div>
+                <div class="mt-1 text-sm text-green-100">Yillik tajriba</div>
+              </div>
+              <div
+                class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"
+              >
+                <div class="text-2xl font-bold">98%</div>
+                <div class="mt-1 text-sm text-green-100">
+                  Natija ko'rsatkichi
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute inset-0 rounded-[2rem] bg-white/10 blur-3xl"
+            ></div>
+            <div
+              class="relative rounded-[2rem] border border-white/15 bg-white/10 p-4 shadow-2xl backdrop-blur"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                alt="Hackathon IT School o'quvchilari"
+                class="h-full min-h-[420px] w-full rounded-[1.5rem] object-cover"
+              />
+              <div
+                class="absolute bottom-10 left-10 max-w-xs rounded-2xl bg-white p-5 text-slate shadow-cardhover"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-success/10 text-success"
+                  >
+                    <i class="fas fa-chart-line text-xl"></i>
+                  </div>
+                  <div>
+                    <div class="text-lg font-bold">Akademik o'sish</div>
+                    <div class="text-sm text-muted">
+                      Har bir bosqichda kuzatuv va mentorlik
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative -mt-10 pb-8">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-5 md:grid-cols-4">
+            <div
+              class="card-hover fade-in rounded-2xl bg-white p-6 text-center shadow-card"
+            >
+              <div
+                class="counter text-4xl font-extrabold text-primary"
+                data-target="98"
+                data-suffix="%"
+              >
+                0
+              </div>
+              <p class="mt-2 text-sm text-muted">IELTS o'rtacha ball</p>
+            </div>
+            <div
+              class="card-hover fade-in rounded-2xl bg-white p-6 text-center shadow-card"
+            >
+              <div
+                class="counter text-4xl font-extrabold text-primary"
+                data-target="1450"
+              >
+                0
+              </div>
+              <p class="mt-2 text-sm text-muted">SAT o'rtacha ball</p>
+            </div>
+            <div
+              class="card-hover fade-in rounded-2xl bg-white p-6 text-center shadow-card"
+            >
+              <div
+                class="counter text-4xl font-extrabold text-primary"
+                data-target="500"
+                data-suffix="+"
+              >
+                0
+              </div>
+              <p class="mt-2 text-sm text-muted">Bitiruvchilar soni</p>
+            </div>
+            <div
+              class="card-hover fade-in rounded-2xl bg-white p-6 text-center shadow-card"
+            >
+              <div
+                class="counter text-4xl font-extrabold text-primary"
+                data-target="15"
+                data-suffix="+"
+              >
+                0
+              </div>
+              <p class="mt-2 text-sm text-muted">Yillik tajriba</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-surface py-20">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8"
+        >
+          <div class="relative">
+            <div
+              class="absolute -left-4 -top-4 h-32 w-32 rounded-full bg-secondary/15"
+            ></div>
+            <img loading="lazy"
+              src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80"
+              alt="Hackathon IT School hayoti"
+              class="relative h-full min-h-[420px] w-full rounded-[2rem] object-cover shadow-cardhover"
+            />
+          </div>
+          <div>
+            <div class="section-badge">Maktab haqida</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Nima uchun Hackathon IT School?
+            </h2>
+            <p class="mt-6 text-base leading-8 text-muted">
+              Biz ta'limni faqat fan o'rgatish deb bilmaymiz. Hackathon IT
+              School o'quvchilarga mustaqil fikrlash, til ko'nikmasi, test
+              strategiyasi va o'ziga ishonchni birgalikda shakllantiradigan
+              o'quv muhitini yaratadi.
+            </p>
+            <div class="mt-8 grid gap-4 sm:grid-cols-3">
+              <div class="fade-in rounded-2xl bg-white p-5 shadow-card">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary"
+                >
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3 class="font-bold">Natija tahlili</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">
+                  Har bir o'quvchi uchun rivojlanish dinamikasi kuzatiladi.
+                </p>
+              </div>
+              <div class="fade-in rounded-2xl bg-white p-5 shadow-card">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-success/10 text-success"
+                >
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="font-bold">Mentor yondashuvi</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">
+                  Ustozlar darsdan tashqari ham yo'nalish beradi.
+                </p>
+              </div>
+              <div class="fade-in rounded-2xl bg-white p-5 shadow-card">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent"
+                >
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="font-bold">Zamonaviy metodika</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">
+                  Amaliyot, fikrlash va kommunikatsiya markazda turadi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Afzalliklarimiz</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Har bir bosqichda kuchli tayanch
+            </h2>
+          </div>
+          <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article
+              class="card-hover fade-in rounded-2xl bg-slate-50 p-7 shadow-card"
+            >
+              <i
+                class="fas fa-book-open icon-chip bg-primary/10 text-primary"
+              ></i>
+              <h3 class="mt-5 text-xl font-bold">Zamonaviy o'quv dasturi</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Mahalliy va xalqaro talablarni birlashtirgan yangilanib turuvchi
+                dastur.
+              </p>
+            </article>
+            <article
+              class="card-hover fade-in rounded-2xl bg-slate-50 p-7 shadow-card"
+            >
+              <i
+                class="fas fa-user-tie icon-chip bg-secondary/10 text-secondary"
+              ></i>
+              <h3 class="mt-5 text-xl font-bold">Professional o'qituvchilar</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Kuchli akademik tayyorgarlikka ega va natija bilan ishlaydigan
+                ustozlar.
+              </p>
+            </article>
+            <article
+              class="card-hover fade-in rounded-2xl bg-slate-50 p-7 shadow-card"
+            >
+              <i
+                class="fas fa-fingerprint icon-chip bg-success/10 text-success"
+              ></i>
+              <h3 class="mt-5 text-xl font-bold">Individual yondashuv</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Daraja, temp va maqsadga qarab shaxsiy o'quv yo'li tuziladi.
+              </p>
+            </article>
+            <article
+              class="card-hover fade-in rounded-2xl bg-slate-50 p-7 shadow-card"
+            >
+              <i
+                class="fas fa-laptop-house icon-chip bg-accent/10 text-accent"
+              ></i>
+              <h3 class="mt-5 text-xl font-bold">Texnologiyalar</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Raqamli monitoring, test banki va interaktiv dars materiallari.
+              </p>
+            </article>
+            <article
+              class="card-hover fade-in rounded-2xl bg-slate-50 p-7 shadow-card"
+            >
+              <i
+                class="fas fa-shield-heart icon-chip bg-primary/10 text-primary"
+              ></i>
+              <h3 class="mt-5 text-xl font-bold">Xavfsiz muhit</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Intizomli, nazoratli va bolalar uchun qulay ta'lim muhiti.
+              </p>
+            </article>
+            <article
+              class="card-hover fade-in rounded-2xl bg-slate-50 p-7 shadow-card"
+            >
+              <i
+                class="fas fa-comments icon-chip bg-secondary/10 text-secondary"
+              ></i>
+              <h3 class="mt-5 text-xl font-bold">Ota-onalar bilan aloqa</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Davomat, natija va tavsiyalar bo'yicha muntazam qayta aloqa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENTORS SECTION -->
+      <section id="mentors" class="section-surface py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Ustozlar Jamoasi</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Yuqori tajribali mentorlar
+            </h2>
+            <p class="mt-4 text-muted">
+              Xalqaro darajadagi tajribaga ega bo'lgan, professional
+              ustozlarimiz bilan tanishing.
+            </p>
+          </div>
+          <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[2rem] bg-white shadow-card"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=400&h=400&q=80"
+                alt="Mentor 1"
+                class="h-64 w-full object-cover"
+              />
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold">Azizbek Rahimov</h3>
+                <p class="mt-1 text-sm font-semibold text-primary">
+                  Senior Frontend Dasturchi
+                </p>
+                <p class="mt-3 text-sm text-muted">
+                  5 yillik tajriba. EPAM tizimida faoliyat yuritgan.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[2rem] bg-white shadow-card"
+              style="transition-delay: 100ms"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400&q=80"
+                alt="Mentor 2"
+                class="h-64 w-full object-cover"
+              />
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold">Kamila Aliyeva</h3>
+                <p class="mt-1 text-sm font-semibold text-secondary">
+                  IELTS & SAT Instruktori
+                </p>
+                <p class="mt-3 text-sm text-muted">
+                  IELTS 8.5 sohibasi, C1 va pedagogika yutuqlari bor.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[2rem] bg-white shadow-card"
+              style="transition-delay: 200ms"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&w=400&h=400&q=80"
+                alt="Mentor 3"
+                class="h-64 w-full object-cover"
+              />
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold">Rustam Qodirov</h3>
+                <p class="mt-1 text-sm font-semibold text-success">
+                  Backend Dasturchi
+                </p>
+                <p class="mt-3 text-sm text-muted">
+                  Python va Node.js dagi yirik xalqaro loyihalar muallifi.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[2rem] bg-white shadow-card"
+              style="transition-delay: 300ms"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=400&q=80"
+                alt="Mentor 4"
+                class="h-64 w-full object-cover"
+              />
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-bold">Madina Umarova</h3>
+                <p class="mt-1 text-sm font-semibold text-accent">
+                  UI/UX Dizayner
+                </p>
+                <p class="mt-3 text-sm text-muted">
+                  Turli startaplarda premium darajadagi dizaynlar qullagan.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="bg-white py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Kurslar</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Asosiy ta'lim yo'nalishlari
+            </h2>
+            <p class="mt-4 text-muted">
+              Har bir kurs maqsadli dastur, muntazam test va amaliy nazorat
+              bilan olib boriladi.
+            </p>
+          </div>
+          <div class="mt-14 grid gap-6 lg:grid-cols-3">
+            <article
+              class="card-hover fade-in relative rounded-[1.75rem] bg-white p-8 shadow-card"
+            >
+              <span class="course-tag">Eng talabgir</span>
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-2xl text-primary"
+              >
+                <i class="fas fa-language"></i>
+              </div>
+              <h3 class="text-2xl font-bold">IELTS tayyorlash</h3>
+              <p class="mt-4 text-sm leading-7 text-muted">
+                6.0 dan 7.5+ bandgacha olib chiqishga yo'naltirilgan intensiv
+                dastur.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-slate">
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Muddat: 4-8 oy
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Mock test va
+                  speaking club
+                </li>
+              </ul>
+            </article>
+            <article
+              class="card-hover fade-in relative rounded-[1.75rem] bg-white p-8 shadow-card"
+            >
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary/10 text-2xl text-secondary"
+              >
+                <i class="fas fa-square-root-variable"></i>
+              </div>
+              <h3 class="text-2xl font-bold">SAT tayyorlash</h3>
+              <p class="mt-4 text-sm leading-7 text-muted">
+                1300 dan 1600 ball oralig'iga mo'ljallangan matematika va verbal
+                strategiyasi.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-slate">
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Muddat: 5-9 oy
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Weekly practice
+                  va analytics
+                </li>
+              </ul>
+            </article>
+            <article
+              class="card-hover fade-in relative rounded-[1.75rem] bg-white p-8 shadow-card"
+            >
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent/10 text-2xl text-accent"
+              >
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Umumiy ingliz tili</h3>
+              <p class="mt-4 text-sm leading-7 text-muted">
+                Boshlang'ichdan ilg'or darajagacha muloqot va grammatika
+                muvozanatidagi kurs.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-slate">
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Muddat: 3-6 oy
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Placement test
+                  va speaking practice
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Faoliyatlar</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Darsdan tashqari rivojlanish
+            </h2>
+          </div>
+          <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div
+              class="card-hover fade-in rounded-2xl border border-slate-200 p-6"
+            >
+              <i class="fas fa-futbol icon-chip bg-success/10 text-success"></i>
+              <h3 class="mt-5 text-lg font-bold">Sport musobaqalari</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Jamoaviylik va sog'lom raqobatni rivojlantiradigan turnirlar.
+              </p>
+            </div>
+            <div
+              class="card-hover fade-in rounded-2xl border border-slate-200 p-6"
+            >
+              <i
+                class="fas fa-microscope icon-chip bg-primary/10 text-primary"
+              ></i>
+              <h3 class="mt-5 text-lg font-bold">Ilmiy loyihalar</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Izlanish, taqdimot va amaliy muammo yechishga asoslangan ishlar.
+              </p>
+            </div>
+            <div
+              class="card-hover fade-in rounded-2xl border border-slate-200 p-6"
+            >
+              <i
+                class="fas fa-masks-theater icon-chip bg-accent/10 text-accent"
+              ></i>
+              <h3 class="mt-5 text-lg font-bold">Madaniy tadbirlar</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Nutq, sahna va ijodiy fikrlashni qo'llab-quvvatlovchi
+                uchrashuvlar.
+              </p>
+            </div>
+            <div
+              class="card-hover fade-in rounded-2xl border border-slate-200 p-6"
+            >
+              <i
+                class="fas fa-bus icon-chip bg-secondary/10 text-secondary"
+              ></i>
+              <h3 class="mt-5 text-lg font-bold">Sayohatlar</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Yangi muhit orqali dunyoqarashni kengaytiruvchi safarlar va
+                ekskursiyalar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-surface py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Qabul jarayoni</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              3 qadamda ro'yxatdan o'ting
+            </h2>
+          </div>
+          <div class="mt-14 grid gap-8 md:grid-cols-3">
+            <div
+              class="process-card fade-in rounded-2xl bg-white p-8 shadow-card"
+            >
+              <span class="process-number">1</span>
+              <h3 class="mt-6 text-xl font-bold">Ariza qoldirish</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Onlayn forma orqali yoki ofisga kelib dastlabki ariza
+                topshirasiz.
+              </p>
+            </div>
+            <div
+              class="process-card fade-in rounded-2xl bg-white p-8 shadow-card"
+            >
+              <span class="process-number">2</span>
+              <h3 class="mt-6 text-xl font-bold">Sinov tekshiruvi</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Bepul diagnostika orqali daraja va mos guruh aniqlanadi.
+              </p>
+            </div>
+            <div
+              class="process-card fade-in rounded-2xl bg-white p-8 shadow-card"
+            >
+              <span class="process-number">3</span>
+              <h3 class="mt-6 text-xl font-bold">Ro'yxatga olish</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Shartnoma rasmiylashtirilib, dars jadvali va start sanasi
+                beriladi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Tariflar</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Sizga mos paketni tanlang
+            </h2>
+          </div>
+          <div class="mx-auto mt-14 grid max-w-5xl gap-6 lg:grid-cols-2">
+            <article
+              class="card-hover fade-in rounded-[1.75rem] border border-slate-200 p-8 shadow-card"
+            >
+              <h3 class="text-2xl font-bold">1-tarif</h3>
+              <p class="mt-2 text-sm text-muted">Qatnov asosidagi qulay paket</p>
+              <div class="mt-6 text-4xl font-extrabold text-primary">
+                206$
+                <span class="text-base font-medium text-muted">/oy</span>
+              </div>
+              <ul class="mt-8 space-y-3 text-sm leading-7 text-slate">
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Qatnov uchun avtomobil
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>2 mahal issiq ovqat
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-success"></i>Dushanbadan jumagacha dars
+                </li>
+              </ul>
+              <button
+                type="button"
+                data-plan="1-tarif - 206$/oy"
+                class="plan-select-btn mt-8 inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white transition hover:bg-secondary"
+              >
+                Shu tarifni tanlash
+              </button>
+            </article>
+            <article
+              class="card-hover fade-in relative rounded-[1.75rem] border-2 border-primary bg-primary p-8 text-white shadow-cardhover"
+            >
+              <span
+                class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent px-4 py-2 text-xs font-bold uppercase tracking-wide text-white"
+                >Eng ommabop</span
+              >
+              <h3 class="text-2xl font-bold">2-tarif</h3>
+              <p class="mt-2 text-sm text-green-100">To'liq yashash va ta'lim paketi</p>
+              <div class="mt-6 text-4xl font-extrabold">
+                288$
+                <span class="text-base font-medium text-green-100"
+                  >/oy</span
+                >
+              </div>
+              <ul class="mt-8 space-y-3 text-sm leading-7 text-white">
+                <li>
+                  <i class="fas fa-check mr-3 text-accent"></i>Yotoqxona
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-accent"></i>3 mahal issiq ovqat
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-accent"></i>Dushanba-juma darslari
+                </li>
+                <li>
+                  <i class="fas fa-check mr-3 text-accent"></i>Qolgan kunlarda ixtiyoriy darslar
+                </li>
+              </ul>
+              <button
+                type="button"
+                data-plan="2-tarif - 288$/oy"
+                class="plan-select-btn mt-8 inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-4 text-sm font-semibold text-primary transition hover:bg-slate-100"
+              >
+                Shu tarifni tanlash
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-surface py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Natijalar va fikrlar</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              O'quvchilar ko'rsatkichlari va ishonchi
+            </h2>
+            <p class="mt-4 text-muted">
+              Har bir natija faqat ball emas, balki o'quvchining o'sishi va
+              ishonchiga aylangan real tajriba.
+            </p>
+          </div>
+          <div class="mt-14 grid gap-6 lg:grid-cols-3">
+            <article class="result-card card-hover fade-in rounded-[2rem] bg-white p-8 shadow-card">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-sm font-semibold uppercase tracking-wide text-primary">IELTS</p>
+                  <h3 class="mt-2 text-2xl font-bold">+2.0 Band o'sish</h3>
+                </div>
+                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Top natija</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-muted">
+                "3 oy ichida writing va speaking bo'yicha sezilarli o'sish bo'ldi. Mock test tahlillari aniq kuchli va sust tomonlarimni ko'rsatdi."
+              </p>
+              <div class="mt-6 flex items-center gap-4">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Oyqurbon opa" class="h-14 w-14 rounded-full object-cover" />
+                <div>
+                  <div class="font-bold">Oyqurbon Yo'ldosheva</div>
+                  <div class="text-sm text-muted">Ota-ona fikri</div>
+                </div>
+              </div>
+            </article>
+            <article class="result-card card-hover fade-in rounded-[2rem] bg-white p-8 shadow-card">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-sm font-semibold uppercase tracking-wide text-secondary">SAT</p>
+                  <h3 class="mt-2 text-2xl font-bold">1450 Ball</h3>
+                </div>
+                <span class="rounded-full bg-secondary/10 px-3 py-1 text-xs font-bold text-secondary">Akademik o'sish</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-muted">
+                "Test strategiyasi va vaqtni boshqarish bo'yicha alohida ishlaganimiz sabab, natijam oldingi diagnostikadan ancha yuqori chiqdi."
+              </p>
+              <div class="mt-6 flex items-center gap-4">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Jahongir" class="h-14 w-14 rounded-full object-cover" />
+                <div>
+                  <div class="font-bold">Jahongir Rahmonov</div>
+                  <div class="text-sm text-muted">Bitiruvchi</div>
+                </div>
+              </div>
+            </article>
+            <article class="result-card card-hover fade-in rounded-[2rem] bg-white p-8 shadow-card">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-sm font-semibold uppercase tracking-wide text-accent">General English</p>
+                  <h3 class="mt-2 text-2xl font-bold">Erkin muloqot</h3>
+                </div>
+                <span class="rounded-full bg-accent/10 px-3 py-1 text-xs font-bold text-accent">Speaking boost</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-muted">
+                "Oldin gapirishga tortinardim. Speaking club va kichik guruh mashg'ulotlari tufayli hozir ingliz tilida ancha erkinman."
+              </p>
+              <div class="mt-6 flex items-center gap-4">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="Madinabonu" class="h-14 w-14 rounded-full object-cover" />
+                <div>
+                  <div class="font-bold">Madinabonu Sobirova</div>
+                  <div class="text-sm text-muted">O'quvchi</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="bg-white py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Galereya</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Hackathon IT muhitidan lavhalar
+            </h2>
+            <p class="mt-4 text-muted">
+              Dars jarayoni, jamoaviy ishlanmalar va o'quvchilar muhitini ko'rsatadigan zamonaviy sahnalar.
+            </p>
+          </div>
+          <div class="gallery-grid mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article class="gallery-item fade-in overflow-hidden rounded-[2rem] shadow-card">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Jamoaviy muhokama" class="h-72 w-full object-cover" />
+              <div class="gallery-overlay">
+                <h3 class="text-xl font-bold">Jamoaviy muhokama</h3>
+                <p class="mt-2 text-sm text-white/85">Kichik guruhlar bilan interaktiv o'quv jarayoni.</p>
+              </div>
+            </article>
+            <article class="gallery-item fade-in overflow-hidden rounded-[2rem] shadow-card">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Kompyuter darsi" class="h-72 w-full object-cover" />
+              <div class="gallery-overlay">
+                <h3 class="text-xl font-bold">Raqamli laboratoriya</h3>
+                <p class="mt-2 text-sm text-white/85">Amaliy mashg'ulot va real topshiriqlarga boy muhit.</p>
+              </div>
+            </article>
+            <article class="gallery-item fade-in overflow-hidden rounded-[2rem] shadow-card">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80" alt="Mentor va o'quvchi" class="h-72 w-full object-cover" />
+              <div class="gallery-overlay">
+                <h3 class="text-xl font-bold">Mentor nazorati</h3>
+                <p class="mt-2 text-sm text-white/85">Har bir o'quvchi uchun individual yondashuv va kuzatuv.</p>
+              </div>
+            </article>
+            <article class="gallery-item fade-in overflow-hidden rounded-[2rem] shadow-card md:col-span-2 lg:col-span-2">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80" alt="Tadbirlar" class="h-80 w-full object-cover" />
+              <div class="gallery-overlay">
+                <h3 class="text-xl font-bold">Tadbir va uchrashuvlar</h3>
+                <p class="mt-2 max-w-xl text-sm text-white/85">Akademik o'sish bilan birga muloqot, taqdimot va jamoa ruhini shakllantiradigan tadbirlar.</p>
+              </div>
+            </article>
+            <article class="gallery-item fade-in overflow-hidden rounded-[2rem] shadow-card">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Darsda faol qatnashish" class="h-80 w-full object-cover" />
+              <div class="gallery-overlay">
+                <h3 class="text-xl font-bold">Faol ishtirok</h3>
+                <p class="mt-2 text-sm text-white/85">Savol-javob va prezentatsiya orqali chuqurroq tushunish.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-20 bg-white">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">FAQ</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Ko'p so'raladigan savollar
+            </h2>
+          </div>
+          <div class="mt-14 space-y-4">
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+              <button
+                class="accordion flex w-full items-center justify-between bg-slate-50 px-6 py-5 text-left"
+              >
+                <span class="font-semibold">Yosh cheklovi bormi?</span>
+                <i class="fas fa-chevron-down faq-icon text-primary"></i>
+              </button>
+              <div class="accordion-content bg-white px-6">
+                <p class="pb-5 text-sm leading-7 text-muted">
+                  Asosan 10 yoshdan 18 yoshgacha bo'lgan o'quvchilar bilan
+                  ishlaymiz. Darajaga qarab mos guruh tanlanadi.
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+              <button
+                class="accordion flex w-full items-center justify-between bg-slate-50 px-6 py-5 text-left"
+              >
+                <span class="font-semibold">Darslar qachon bo'ladi?</span>
+                <i class="fas fa-chevron-down faq-icon text-primary"></i>
+              </button>
+              <div class="accordion-content bg-white px-6">
+                <p class="pb-5 text-sm leading-7 text-muted">
+                  Ertalabki va kechki guruhlar mavjud. Yakuniy jadval
+                  diagnostika va guruh shakllangandan keyin beriladi.
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+              <button
+                class="accordion flex w-full items-center justify-between bg-slate-50 px-6 py-5 text-left"
+              >
+                <span class="font-semibold">O'qituvchilar kim?</span>
+                <i class="fas fa-chevron-down faq-icon text-primary"></i>
+              </button>
+              <div class="accordion-content bg-white px-6">
+                <p class="pb-5 text-sm leading-7 text-muted">
+                  Ustozlarimiz xalqaro imtihonlar bilan ishlagan, tajribali va
+                  mentorlik yondashuviga ega mutaxassislardir.
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+              <button
+                class="accordion flex w-full items-center justify-between bg-slate-50 px-6 py-5 text-left"
+              >
+                <span class="font-semibold"
+                  >Ro'yxatdan o'tish narxi qancha?</span
+                >
+                <i class="fas fa-chevron-down faq-icon text-primary"></i>
+              </button>
+              <div class="accordion-content bg-white px-6">
+                <p class="pb-5 text-sm leading-7 text-muted">
+                  Ro'yxatdan o'tish bepul. To'lov tanlangan kurs yoki tarif
+                  bo'yicha amalga oshiriladi.
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+              <button
+                class="accordion flex w-full items-center justify-between bg-slate-50 px-6 py-5 text-left"
+              >
+                <span class="font-semibold">Qanday natijalar kutyapsiz?</span>
+                <i class="fas fa-chevron-down faq-icon text-primary"></i>
+              </button>
+              <div class="accordion-content bg-white px-6">
+                <p class="pb-5 text-sm leading-7 text-muted">
+                  Maqsadga qarab IELTS, SAT yoki umumiy ingliz tilida
+                  o'lchanadigan o'sish, muntazam test natijalari va ishonchli
+                  nutq ko'nikmasini kutish mumkin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section-surface py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Yangiliklar</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              So'nggi yangiliklar
+            </h2>
+          </div>
+          <div class="mt-14 grid gap-6 lg:grid-cols-3">
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[1.75rem] bg-white shadow-card"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                alt="IELTS natijalari"
+                class="h-52 w-full object-cover"
+              />
+              <div class="p-7">
+                <div
+                  class="text-xs font-semibold uppercase tracking-wide text-primary"
+                >
+                  IELTS
+                </div>
+                <h3 class="mt-3 text-xl font-bold">
+                  Yangi IELTS guruhlari uchun qabul boshlandi
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-muted">
+                  Speaking va writing bo'yicha qo'shimcha mentorlik bilan
+                  intensiv yangi guruhlar shakllanmoqda.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[1.75rem] bg-white shadow-card"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80"
+                alt="SAT bootcamp"
+                class="h-52 w-full object-cover"
+              />
+              <div class="p-7">
+                <div
+                  class="text-xs font-semibold uppercase tracking-wide text-primary"
+                >
+                  SAT
+                </div>
+                <h3 class="mt-3 text-xl font-bold">
+                  SAT bootcamp dasturi ishga tushdi
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-muted">
+                  Qisqa muddatda ball oshirish uchun test strategiyasi va
+                  analytics bloklari qo'shildi.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card-hover fade-in overflow-hidden rounded-[1.75rem] bg-white shadow-card"
+            >
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+                alt="Ota-onalar uchrashuvi"
+                class="h-52 w-full object-cover"
+              />
+              <div class="p-7">
+                <div
+                  class="text-xs font-semibold uppercase tracking-wide text-primary"
+                >
+                  Tadbir
+                </div>
+                <h3 class="mt-3 text-xl font-bold">
+                  Ota-onalar bilan ochiq uchrashuv o'tkaziladi
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-muted">
+                  Yangi semestr rejalari, nazorat tizimi va o'quv jarayoni
+                  bo'yicha batafsil suhbat tashkil etiladi.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[0.95fr,1.05fr]">
+            <div>
+              <div class="section-badge">Bog'lanish</div>
+              <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+                Savolingizga tez javob beramiz
+              </h2>
+              <p class="mt-6 text-base leading-8 text-muted">
+                Forma orqali murojaat qoldiring. Administrator siz bilan
+                bog'lanib, kurs, jadval va qabul jarayoni bo'yicha batafsil
+                ma'lumot beradi.
+              </p>
+              <div class="mt-8 space-y-4">
+                <div class="contact-card rounded-2xl bg-slate-50 p-5">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary"
+                    >
+                      <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold">Manzil</div>
+                      <div class="mt-1 text-sm leading-7 text-muted">
+                        Farg'ona shahri, Shodiyona MFY
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-card rounded-2xl bg-slate-50 p-5">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary"
+                    >
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold">Telefon</div>
+                      <div class="mt-1 text-sm leading-7 text-muted">
+                        +998 91 791 48 81
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-card rounded-2xl bg-slate-50 p-5">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold">Email</div>
+                      <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=anosvoldigort47@gmail.com&su=Hackathon%20IT%20School%20murojaat&body=Assalomu%20alaykum%2C%20men%20kurslar%20haqida%20ma%27lumot%20olmoqchiman."
+                        target="_blank"
+                        rel="noreferrer"
+                        class="mt-1 inline-block text-sm leading-7 text-muted transition hover:text-primary"
+                      >
+                        anosvoldigort47@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[2rem] bg-slate-50 p-8 shadow-card md:p-10">
+              <h3 class="text-2xl font-bold">Ariza qoldirish</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Ism, telefon va qisqa xabar qoldiring. Zarurat bo'lsa, sizga mos
+                kursni ham birga tanlaymiz.
+              </p>
+              <form id="contact-form" class="mt-8 space-y-5">
+                <div>
+                  <label
+                    for="name"
+                    class="mb-2 block text-sm font-semibold text-slate"
+                    >Ism</label
+                  >
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Ismingizni kiriting"
+                    class="form-input w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="mb-2 block text-sm font-semibold text-slate"
+                    >Telefon</label
+                  >
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="+998 90 123 45 67"
+                    class="form-input w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="selected_plan"
+                    class="mb-2 block text-sm font-semibold text-slate"
+                    >Tanlangan tarif</label
+                  >
+                  <input
+                    id="selected_plan"
+                    name="selected_plan"
+                    type="hidden"
+                  />
+                  <select
+                    id="selected_plan_select"
+                    class="form-input w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                  >
+                    <option value="1-tarif - 206$/oy">1-tarif - 206$/oy</option>
+                    <option value="2-tarif - 288$/oy">2-tarif - 288$/oy</option>
+                    <option value="Boshqa">Boshqa tarif</option>
+                  </select>
+                </div>
+                <div id="custom-plan-wrapper" class="hidden">
+                  <label
+                    for="custom_plan"
+                    class="mb-2 block text-sm font-semibold text-slate"
+                    >Boshqa tarif</label
+                  >
+                  <input
+                    id="custom_plan"
+                    type="text"
+                    placeholder="Tarif nomini yozing"
+                    class="form-input w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="grade"
+                    class="mb-2 block text-sm font-semibold text-slate"
+                    >Farzandingiz nechanchi sinfda o'qiydi?</label
+                  >
+                  <select
+                    id="grade"
+                    name="grade"
+                    class="form-input w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                  >
+                    <option value="1-sinf">1-sinf</option>
+                    <option value="2-sinf">2-sinf</option>
+                    <option value="3-sinf">3-sinf</option>
+                    <option value="4-sinf">4-sinf</option>
+                    <option value="5-sinf">5-sinf</option>
+                    <option value="6-sinf">6-sinf</option>
+                    <option value="7-sinf">7-sinf</option>
+                    <option value="8-sinf">8-sinf</option>
+                    <option value="9-sinf">9-sinf</option>
+                    <option value="10-sinf">10-sinf</option>
+                    <option value="11-sinf">11-sinf</option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="mb-2 block text-sm font-semibold text-slate"
+                    >Xabar</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Savolingiz yoki maqsadingizni yozing"
+                    class="form-input w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white transition hover:bg-secondary"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i>
+                  Yuborish
+                </button>
+                <p
+                  id="form-status"
+                  class="hidden rounded-xl px-4 py-3 text-sm"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="section-surface py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="section-badge">Manzil</div>
+            <h2 class="mt-4 text-3xl font-extrabold md:text-4xl">
+              Bizni topish yanada oson
+            </h2>
+            <p class="mt-4 text-muted">
+              Maktabimizga yetib kelish uchun xarita, tezkor yo'nalish va asosiy
+              manzil ma'lumotlari bitta joyga jamlandi.
+            </p>
+          </div>
+
+          <div class="mt-14 grid gap-8 lg:grid-cols-[0.9fr,1.1fr]">
+            <div class="map-info-panel rounded-[2rem] bg-white p-8 shadow-card md:p-10">
+              <h3 class="text-2xl font-bold">Hackathon IT School lokatsiyasi</h3>
+              <p class="mt-4 text-sm leading-7 text-muted">
+                Farg'ona shahri, Shodiyona MFY hududida joylashgan markazimizga
+                qatnov uchun qulay yo'nalishlar mavjud. Quyidagi tugmalar orqali
+                tezda marshrut ochishingiz mumkin.
+              </p>
+
+              <div class="mt-8 space-y-4">
+                <div class="map-detail-card rounded-2xl bg-slate-50 p-5">
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                      <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold">Aniq manzil</div>
+                      <div class="mt-1 text-sm leading-7 text-muted">
+                        Farg'ona shahri, Shodiyona MFY, asosiy qatnov yo'liga yaqin hudud
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="map-detail-card rounded-2xl bg-slate-50 p-5">
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold">Qabul va tashrif vaqti</div>
+                      <div class="mt-1 text-sm leading-7 text-muted">
+                        Dushanba - Shanba, 08:00 dan 18:00 gacha
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="map-detail-card rounded-2xl bg-slate-50 p-5">
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                      <i class="fas fa-route"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold">Yo'nalish olish</div>
+                      <div class="mt-1 text-sm leading-7 text-muted">
+                        Yandex xarita, marshrut va telefon orqali bir tugmada bog'lanish mumkin.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 grid gap-3 sm:grid-cols-2">
+                <a
+                  href="https://yandex.uz/maps/?ll=71.766371%2C40.380008&z=16&pt=71.766371,40.380008,pm2rdm"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-4 text-sm font-semibold text-white transition hover:bg-secondary"
+                >
+                  <i class="fas fa-map-location-dot"></i>
+                  Xaritada ochish
+                </a>
+                <a
+                  href="https://yandex.uz/maps/?rtext=~40.380008,71.766371&rtt=auto&z=16"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="inline-flex items-center justify-center gap-2 rounded-xl border border-[#E6B800] bg-[#FFCC00] px-5 py-4 text-sm font-bold text-black transition hover:bg-[#FFD633]"
+                >
+                  <i class="fas fa-route"></i>
+                  Yo'nalish olish
+                </a>
+                <a
+                  href="https://go.yandex/route?end-lat=40.380008&end-lon=71.766371"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#8B5CF6] px-5 py-4 text-sm font-semibold text-white transition hover:bg-[#7C3AED]"
+                >
+                  <i class="fas fa-taxi"></i>
+                  Yandex Go taksi
+                </a>
+                <a
+                  href="tel:+998917914881"
+                  class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 px-5 py-4 text-sm font-semibold text-slate transition hover:border-primary hover:text-primary"
+                >
+                  <i class="fas fa-phone"></i>
+                  Qo'ng'iroq qilish
+                </a>
+                <a
+                  href="#contact"
+                  class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 px-5 py-4 text-sm font-semibold text-slate transition hover:border-primary hover:text-primary sm:col-span-2"
+                >
+                  <i class="fas fa-envelope"></i>
+                  Ariza qoldirish
+                </a>
+              </div>
+
+            </div>
+
+            <div class="map-shell relative overflow-hidden rounded-[2rem] shadow-card">
+              <div class="pointer-events-none absolute left-4 top-4 z-10 rounded-2xl bg-white/95 px-4 py-3 shadow-card backdrop-blur">
+                <div class="flex items-center gap-2 text-sm font-semibold text-slate">
+                  <i class="fas fa-clock text-secondary"></i>
+                  08:00 - 18:00
+                </div>
+              </div>
+
+              <div class="pointer-events-none absolute right-4 bottom-4 z-10 rounded-2xl bg-white/95 px-4 py-3 shadow-card backdrop-blur">
+                <div class="flex items-center gap-2 text-sm font-semibold text-slate">
+                  <i class="fas fa-phone text-primary"></i>
+                  +998 91 791 48 81
+                </div>
+              </div>
+
+              <iframe
+                src="https://yandex.uz/map-widget/v1/?ll=71.766371%2C40.380008&z=16&pt=71.766371,40.380008,pm2rdm"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowfullscreen="true"
+                style="position: relative; filter: contrast(1.08)"
+                class="min-h-[460px] w-full"
+                title="Hackathon IT School xaritasi"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate px-4 py-16 text-white sm:px-6 lg:px-8">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr,0.8fr,0.8fr]"
+      >
+        <div>
+          <div class="flex items-center gap-3">
+            <img loading="lazy"
+              src="images/logo.png"
+              alt="Hackathon IT School logotipi"
+              class="h-12 w-12 rounded-xl object-contain"
+            />
+            <div>
+              <div class="text-lg font-extrabold">Hackathon IT School</div>
+              <div class="text-sm text-slate-300">Premium ta'lim markazi</div>
+            </div>
+          </div>
+          <p class="mt-6 max-w-md text-sm leading-7 text-slate-300">
+            Sifatli ta'lim, zamonaviy metodika va o'lchanadigan natija orqali
+            o'quvchilarning ishonchli kelajagini quramiz.
+          </p>
+          <div class="mt-6 flex items-center gap-3">
+            <a
+              href="https://t.me/Dr4x1l"
+              target="_blank"
+              rel="noreferrer"
+              class="social-link"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://instagram.com/hackathon_it_school"
+              target="_blank"
+              rel="noreferrer"
+              class="social-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=anosvoldigort47@gmail.com&su=Hackathon%20IT%20School%20murojaat&body=Assalomu%20alaykum%2C%20men%20kurslar%20haqida%20ma%27lumot%20olmoqchiman."
+              target="_blank"
+              rel="noreferrer"
+              class="social-link"
+              aria-label="Gmail orqali yozish"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="tel:+998917914881" class="social-link"
+              ><i class="fas fa-phone"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Tezkor havolalar</h3>
+          <div class="mt-5 space-y-3 text-sm text-slate-300">
+            <a href="#home" class="footer-link block">Bosh sahifa</a>
+            <a href="#about" class="footer-link block">Maktab haqida</a>
+            <a href="#courses" class="footer-link block">Kurslar</a>
+            <a href="#gallery" class="footer-link block">Galereya</a>
+            <a href="#contact" class="footer-link block">Bog'lanish</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Kontaktlar</h3>
+          <div class="mt-5 space-y-3 text-sm text-slate-300">
+            <p>Farg'ona shahri, Shodiyona MFY</p>
+            <p>+998 91 791 48 81</p>
+            <p>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=anosvoldigort47@gmail.com&su=Hackathon%20IT%20School%20murojaat&body=Assalomu%20alaykum%2C%20men%20kurslar%20haqida%20ma%27lumot%20olmoqchiman."
+                target="_blank"
+                rel="noreferrer"
+                class="footer-link"
+                >anosvoldigort47@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-6 text-center text-sm text-slate-400"
+      >
+        &copy; 2026 Hackathon IT School. Barcha huquqlar himoyalangan.
+      </div>
+    </footer>
+
+    <!-- Google Analytics - GA_MEASUREMENT_ID ni o'zingizniki bilan almashtiring -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

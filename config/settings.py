@@ -31,15 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "unfold",  
-    "unfold.contrib.filters",  
-    "unfold.contrib.forms",  
-    "unfold.contrib.inlines",  
-    "unfold.contrib.import_export",  
-    "unfold.contrib.guardian",  
-    "unfold.contrib.simple_history",  
-    "unfold.contrib.location_field",  
-    "unfold.contrib.constance",  
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,7 +55,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'Templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,7 +66,7 @@ TEMPLATES = [
         },
     },
 ]
-
+#M-aziz
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
@@ -125,16 +116,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
