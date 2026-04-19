@@ -1,12 +1,10 @@
-from re import VERBOSE
-from os import name
 from django.db import models
 
 class Banner(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField()
-    image = models.ImageField(upload_to='banners/')
+    image = models.ImageField(upload_to='banners/', blank=True, null=True)
     button_text = models.CharField(max_length=255, blank=True, null=True)
     button_text2 = models.CharField(max_length=255, blank=True, null=True)
     alone_text = models.CharField(max_length=255, blank=True, null=True)
@@ -45,7 +43,7 @@ class About_Us(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField()
-    image = models.ImageField(upload_to='about_us/')
+    image = models.ImageField(upload_to='about_us/', blank=True, null=True)
     card_title = models.CharField(max_length=255, blank=True, null=True)
     card_description = models.CharField(max_length=255, blank=True, null=True)
     card_icon = models.CharField(max_length=255, blank=True, null=True)
@@ -71,29 +69,26 @@ class Power(models.Model):
         return self.main_title   
 
 class Team(models.Model):
-    title = models.CharField(max_length=255)
-    subtitle = models.CharField(max_length=255, blank=True, null=True)
-    class Card(models.Model):
-        name = models.CharField(max_length=255)
-        subtitle_2 = models.CharField(max_length=255)
-        description = models.TextField()
-        icon = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, default='Team Member')
+    title = models.CharField(max_length=255, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    image = models.ImageField(upload_to='team/', blank=True, null=True)
+    position = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
         verbose_name = "Team"
         verbose_name_plural = "Ustozlar"
 
     def __str__(self):
-        return self.title
+        return self.name
 
 class Kurslar(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255, blank=True, null=True)
-    class Card(models.Model):
-        name = models.CharField(max_length=255)
-        subtitle_2 = models.CharField(max_length=255)
-        description = models.TextField()
-        icon = models.CharField(max_length=255)
+    description = models.TextField(blank=True, null=True)
+    image = models.ImageField(upload_to='kurslar/', blank=True, null=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+    duration = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
         verbose_name = "Kurslar"
@@ -171,7 +166,7 @@ class Fikrlar(models.Model):
     description = models.TextField()
     user_name = models.CharField(max_length=255)
     user = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='fikrlar/')
+    image = models.ImageField(upload_to='fikrlar/', blank=True, null=True)
 
     class Meta:
         verbose_name = "Fikrlar"
@@ -183,10 +178,7 @@ class Fikrlar(models.Model):
 class Galereya(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255, blank=True, null=True)
-    class Card(models.Model):
-        title = models.CharField(max_length=255)
-        subtitle = models.CharField(max_length=255)
-        image = models.ImageField(upload_to='galereya/')
+    image = models.ImageField(upload_to='galereya/', blank=True, null=True)
 
     class Meta:
         verbose_name = "Galereya"
@@ -212,7 +204,7 @@ class Yangiliklar(models.Model):
     mini_title = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to='yangiliklar/')
+    image = models.ImageField(upload_to='yangiliklar/', blank=True, null=True)
 
     class Meta:
         verbose_name = "Yangiliklar"
@@ -233,4 +225,4 @@ class Contact(models.Model):
         verbose_name_plural = "Aloqa"
 
     def __str__(self):
-        return self.name   
+        return self.name
