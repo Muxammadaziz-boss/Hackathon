@@ -174,8 +174,8 @@ Response: {"success": true, "message": "Ariza muvaffaqiyatli yuborildi!"}
 
 ### Environment Variables
 ```env
-TELEGRAM_BOT_TOKEN=7768144078:AAEsWuKvlQr1fcA2umEcWy-oQTxOlxftyT0
-TELEGRAM_ADMIN_CHAT_ID=6990611858
+TELEGRAM_BOT_TOKEN=Telegram bot to'keningiz
+TELEGRAM_ADMIN_CHAT_ID=Admin id yingiz
 ```
 
 ## Xatoliklarni Tuzatish
